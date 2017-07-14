@@ -1,0 +1,26 @@
+{
+  "name" : "Global header",
+  "class" : "c-global-header",
+  "version" : "1.0.0",
+  "creator" : {
+    "name" : "Alex Foxleigh",
+    "github_username" : "foxleigh81"
+  },
+  "description" : "The global header for the site.",
+  "standard_or_universal" : "standard",
+  "parents" : "",
+  "notes" : {
+    "backend" : "",
+    "frontend" : ""
+  },
+  "backend_classes" : {},
+  "has_js" : false,
+  "creation_ticket" : "",
+  "changelog" : [
+    {
+      "date" : "14/07/17",
+      "author" : "Alex Foxleigh",
+      "description" : "Created component"
+    }
+  ]
+}
