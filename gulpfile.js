@@ -102,6 +102,8 @@ gulp.task('stylus', function () {
     }))
     // combine all the files to a single file
     .pipe(concat('core.css'))
+     // Add .min to the end
+    .pipe(rename({ suffix: '.min' }))
     // move the file to the assets folder
     .pipe(gulp.dest('assets/css'))
     // Reload the browser CSS after every change
@@ -201,11 +203,11 @@ gulp.task('bs-reload', function () {
 })
 
 /* Prepare Browser-sync for localhost */
-gulp.task('browser-sync', ['nodemon', 'styles', 'scripts', 'views'], function () {
+gulp.task('browser-sync', ['styles', 'scripts', 'views', 'nodemon'], function () {
   /* Initialise BrowserSync */
   browserSync.init(null, {
     proxy: 'http://localhost:5000',
-    files: ['public/**/*.*'],
+    files: ['assets/**/*.*', 'components', 'views'],
     browser: 'google chrome',
     port: 7000
   })

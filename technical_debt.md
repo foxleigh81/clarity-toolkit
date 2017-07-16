@@ -16,5 +16,6 @@ Nice to have: [NTH]
 ## Tasks:
 1. AF: Remove references to PHP from coding guidelines as this is a node version.
 2. Bring the 'ctgen' package into this one and make all commands be parameters of clarity.js e.g. `clarity --generate'
+3. Replace express-vue with a standard vue + express installation
 
 ## Hacks:

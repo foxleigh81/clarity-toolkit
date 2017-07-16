@@ -33,7 +33,8 @@ router.get('/about', (req, res, next) => {
           { property: 'og:title', content: 'Page Title' },
           { name: 'twitter:title', content: 'Page Title' }
         ]
-      }
+      },
+      components: globalComponents
     }
   })
 })
